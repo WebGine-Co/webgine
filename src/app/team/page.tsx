@@ -1,5 +1,6 @@
-import Navbar from "./_components/navbar";
+import Navbar from "../_components/navbar";
 import Image from "next/image";
+import Team from "./team";
 
 export default function Home() {
 
@@ -9,9 +10,7 @@ export default function Home() {
         <Navbar />
       </nav>
       <main>
-        <div className="py-56 mx-20">
-          <Image src="/images/hero.svg" priority={true} width={1000} height={500} alt="hero" style={{ width: '100%', height: 'auto' }} />
-        </div>
+        <Team />
       </main>
     </div>
   );
