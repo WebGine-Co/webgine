@@ -1,5 +1,6 @@
 import Navbar from "../_components/navbar";
-import Services from "./services";
+import Image from "next/image";
+import Contact from "./contact";
 
 export default function Home() {
 
@@ -7,7 +8,7 @@ export default function Home() {
     <div className="2xl:mx-96 xl:mx-72 lg:mx-60 md:mx-36 sm:mx-20 mx-10 min-h-screen">
       <Navbar />
       <main>
-        <Services />
+        <Contact />
       </main>
     </div>
   );
