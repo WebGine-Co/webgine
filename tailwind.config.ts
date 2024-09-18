@@ -12,6 +12,30 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        appear: {
+          "0%": {
+            transform: "translateY(25%)",
+            opacity: "0",
+            animationTimingFunction: "ease-in-out",
+          },
+          "50%": {
+            transform: "translateY(0%)",
+            opacity: "1",
+            animationTimingFunction: "linear",
+          },
+        },
+        appear2: {
+          "0%": {
+            opacity: "0",
+            animationTimingFunction: "ease-in-out",
+          },
+          "50%": {
+            opacity: "1",
+            animationTimingFunction: "linear",
+          },
+        },
+      },
     },
   },
   plugins: [

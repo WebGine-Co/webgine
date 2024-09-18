@@ -1,35 +1,10 @@
+import PersonCard from "./personCard";
+
 export default function Team() {
     return (
-      <div className="py-20 grid gap-4 grid-cols-2">
-        <div className="card card-side bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-              alt="Movie" 
-              />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">New movie is released!</h2>
-            <p>Click the button to watch on Jetflix app.</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Watch</button>
-            </div>
-          </div>
-        </div>
-        <div className="card card-side bg-base-100 shadow-xl">
-          <div className="card-body">
-            <h2 className="card-title">New movie is released!</h2>
-            <p>Click the button to watch on Jetflix app.</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Watch</button>
-            </div>
-          </div>
-          <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-              alt="Movie" />
-          </figure>
-        </div>
+      <div className="py-20 grid gap-4 md:grid-cols-2 grid-cols-1">
+        <PersonCard firstname="Thibault" lastname="Vercoutre" links={["https://github.com/ThibaultVercoutre", "https://www.linkedin.com/in/thibault-vercoutre-5072b1226/"]} />
+        <PersonCard firstname="Julien" lastname="Konieczny" links={["https://github.com/julienk62", "https://www.linkedin.com/in/julienkonieczny/"]}/>
       </div>
     );
   }
