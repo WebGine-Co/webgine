@@ -9,7 +9,7 @@ interface ModalContactProps {
 export default function ModalContact({ classNameModal, links }: ModalContactProps) {
     return (
         <>
-            <label htmlFor={`my_modal_${classNameModal}`} className="btn">open modal</label>
+            <label htmlFor={`my_modal_${classNameModal}`} className="btn">Réseaux</label>
 
             <input type="checkbox" id={`my_modal_${classNameModal}`} className="modal-toggle" />
             <div className="modal" role="dialog">
@@ -20,7 +20,7 @@ export default function ModalContact({ classNameModal, links }: ModalContactProp
                         <ButtonModal link={links[1]} icon={mdiLinkedin}  name="Linkedin"/>
                     </div>
                 </div>
-                <label className="modal-backdrop" htmlFor={`my_modal_${classNameModal}`}>Close</label>
+                <label className="modal-backdrop" htmlFor={`my_modal_${classNameModal}`}></label>
             </div>
         </>
     );
