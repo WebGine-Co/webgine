@@ -12,7 +12,20 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        contactAppear: 'contactAppear 1.5s ease-in-out',
+      },
       keyframes: {
+        contactAppear: {
+          "0%": {
+            transform: "translateY(10%)",
+            opacity: "0",
+          },
+          "50%": {
+            transform: "translateY(0%)",
+            opacity: "1",
+          },
+        },
         appear: {
           "0%": {
             transform: "translateY(25%)",

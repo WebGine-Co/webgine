@@ -6,7 +6,7 @@ import { mdiEmailOutline } from '@mdi/js';
 export default function Contact() {
     return (
       <div className="py-20 flex justify-center">
-        <div className="card bg-base-100 w-96 shadow-xl shadow-primary">
+        <div className="card bg-base-100 w-96 shadow-xl shadow-primary animate-contactAppear">
           <figure className="px-10 pt-10">
             <Image src="/images/logo.svg" priority={true} height={100} width={200} alt="hero" className="h-auto w-auto"/>
           </figure>

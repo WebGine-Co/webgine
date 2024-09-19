@@ -1,15 +1,16 @@
 import ModalContact from "./modalContact";
 
 interface PersonCardProps {
+    number: number;
     firstname: string;
     lastname: string;
     links: string[];
     skills: {name: string, color: string}[];
 }
 
-export default function PersonCard({ firstname, lastname, links, skills }: PersonCardProps) {
+export default function PersonCard({ number, firstname, lastname, links, skills }: PersonCardProps) {
     return (
-        <div className="card bg-base-100 md:w-96 w-72 shadow-xl shadow-primary mx-auto">
+        <div className={`card bg-base-100 md:w-96 w-72 shadow-xl shadow-primary mx-auto animate-contactAppear transition delay-${1000*(number - 1)}`}>
             <figure className="py-4">
                 <div className="indicator">
                     <span className="indicator-item badge badge-accent indicator-bottom indicator-end">Co-fondateur</span>
