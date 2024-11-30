@@ -13,7 +13,9 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       animation: {
-        contactAppear: 'contactAppear 1.5s ease-in-out',
+        contactAppear: '1s contactAppear ease-in-out',
+        heroAppear: '1.5s appearTranslate ease-in-out',
+        backgroundAppear: '1.5s appearOpacity ease-in-out',
       },
       keyframes: {
         contactAppear: {
@@ -21,31 +23,25 @@ const config: Config = {
             transform: "translateY(10%)",
             opacity: "0",
           },
-          "50%": {
+          "100%": {
             transform: "translateY(0%)",
             opacity: "1",
           },
         },
-        appear: {
+        appearTranslate: {
           "0%": {
             transform: "translateY(25%)",
-            opacity: "0",
-            animationTimingFunction: "ease-in-out",
           },
-          "50%": {
+          "100%": {
             transform: "translateY(0%)",
-            opacity: "1",
-            animationTimingFunction: "linear",
           },
         },
-        appear2: {
+        appearOpacity: {
           "0%": {
             opacity: "0",
-            animationTimingFunction: "ease-in-out",
           },
-          "50%": {
+          "100%": {
             opacity: "1",
-            animationTimingFunction: "linear",
           },
         },
       },

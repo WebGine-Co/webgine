@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -7,28 +8,18 @@ export default function Footer() {
                 <Image src="/images/logo.svg" priority={true} width={100} height={500} alt="hero"/>
                 <p>
                 <br />
-                WebGine
+                WebGine.
                 </p>
             </aside>
             <nav>
                 <h6 className="footer-title">Services</h6>
-                <a className="link link-hover">Branding</a>
-                <a className="link link-hover">Design</a>
-                <a className="link link-hover">Marketing</a>
-                <a className="link link-hover">Advertisement</a>
+                <Link href="/webdevelopment"><div className="link link-hover">Développement Web</div></Link>
+                <Link href="/discorddevelopment"><div className="link link-hover">Développement Discord</div></Link>
             </nav>
             <nav>
-                <h6 className="footer-title">Company</h6>
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Press kit</a>
-            </nav>
-            <nav>
-                <h6 className="footer-title">Legal</h6>
-                <a className="link link-hover">Terms of use</a>
-                <a className="link link-hover">Privacy policy</a>
-                <a className="link link-hover">Cookie policy</a>
+                <h6 className="footer-title">Companie</h6>
+                <Link href="/"><div className="link link-hover">A propos de nous</div></Link>
+                <Link href="/contact"><div className="link link-hover">Nous contacter</div></Link>
             </nav>
             </footer>
     );

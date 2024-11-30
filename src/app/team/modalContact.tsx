@@ -7,6 +7,28 @@ interface ModalContactProps {
 }
 
 export default function ModalContact({ classNameModal, links }: ModalContactProps) {
+    function iconChoice(link: string) {
+        switch (true) {
+            case link.includes('github'):
+                return mdiGithub;
+            case link.includes('linkedin'):
+                return mdiLinkedin;
+            default:
+                return '';
+        }
+    }
+
+    function nameChoice(link: string) {
+        switch (true) {
+            case link.includes('github'):
+                return 'GitHub';
+            case link.includes('linkedin'):
+                return 'Linkedin';
+            default:
+                return '';
+        }
+    }
+
     return (
         <>
             <label htmlFor={`my_modal_${classNameModal}`} className="btn">Réseaux</label>
@@ -14,10 +36,10 @@ export default function ModalContact({ classNameModal, links }: ModalContactProp
             <input type="checkbox" id={`my_modal_${classNameModal}`} className="modal-toggle" />
             <div className="modal" role="dialog">
                 <div className="modal-box">
-                    {/* <h3 className="text-lg font-bold">Hello!</h3> */}
                     <div className="flex justify-evenly">
-                        <ButtonModal link={links[0]} icon={mdiGithub} name="GitHub"/>
-                        <ButtonModal link={links[1]} icon={mdiLinkedin}  name="Linkedin"/>
+                        {links.map((link, index) => (
+                            <ButtonModal key={index} link={link} icon={iconChoice(link)} name={nameChoice(link)} />
+                        ))}
                     </div>
                 </div>
                 <label className="modal-backdrop" htmlFor={`my_modal_${classNameModal}`}></label>
