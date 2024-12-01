@@ -5,6 +5,8 @@ export default function Accroche () {
     return (
         <div className="py-20">
             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center my-20 underline underline-offset-3 decoration-primary">Découvrez nos Services de Développement Discord</h1>
+            
+            <img src="/images/development.png" alt="Automatisation" className="mx-auto my-10 w-2/3" />
             <p className="py-10">
                 Transformez votre serveur Discord avec des solutions personnalisées et innovantes. 
                 Chez WebGine, nous comprenons l'importance d'une communauté bien gérée et engageante. 

@@ -1,3 +1,5 @@
+import IdeaCard from "./ideaCard";
+
 export default function Functionnality() {
 
   return (
@@ -8,25 +10,29 @@ export default function Functionnality() {
       </p>
 
       <div>
-        <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold my-5">Interface Utilisateur Intuitive</h2>
-        <p className="pb-10">
-        Nous créons des interfaces utilisateur intuitives et attrayantes pour une expérience utilisateur optimale.
-        </p>
+        <IdeaCard 
+          image="intuitif" 
+          name="Interface Utilisateur Intuitive" 
+          description="Nous créons des interfaces utilisateur intuitives et attrayantes pour une expérience utilisateur optimale." 
+        />
 
-        <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold my-5">Performance et Sécurité</h2>
-        <p className="pb-10">
-        Nos applications web sont optimisées pour la performance et la sécurité, garantissant une expérience utilisateur fluide et sécurisée.
-        </p>
+        <IdeaCard 
+          image="balance" 
+          name="Performance et Sécurité" 
+          description="Nos applications web sont optimisées pour la performance et la sécurité, garantissant une expérience utilisateur fluide et sécurisée." 
+        />
 
-        <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold my-5">Intégration avec des Services Tiers</h2>
-        <p className="pb-10">
-        Nous intégrons vos applications web avec des services tiers comme les passerelles de paiement, les systèmes CRM et les plateformes de marketing.
-        </p>
-
-        <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold my-5">Scalabilité</h2>
-        <p className="pb-10">
-        Nos solutions sont conçues pour être évolutives, permettant à votre application web de croître avec votre entreprise.
-        </p>
+        <IdeaCard 
+          image="interconnectivite" 
+          name="Intégration avec des Services Tiers" 
+          description="Nous intégrons vos applications web avec des services tiers comme les passerelles de paiement, les systèmes CRM et les plateformes de marketing." 
+        />
+        
+        <IdeaCard 
+          image="scalable" 
+          name="Scalabilité" 
+          description="Nos solutions sont conçues pour être évolutives, permettant à votre application web de croître avec votre entreprise." 
+        />
       </div>
     </div>
   );

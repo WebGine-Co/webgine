@@ -18,7 +18,7 @@ export default function Footer() {
             </nav>
             <nav>
                 <h6 className="footer-title">Companie</h6>
-                <Link href="/"><div className="link link-hover">A propos de nous</div></Link>
+                <Link href="/team"><div className="link link-hover">A propos de nous</div></Link>
                 <Link href="/contact"><div className="link link-hover">Nous contacter</div></Link>
             </nav>
             </footer>
