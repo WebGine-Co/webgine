@@ -6,7 +6,7 @@ interface ProcessusCardProps {
 
 export default function ProcessusCard({ number, name, description }: ProcessusCardProps) {
     return (
-        <div className="card bg-neutral text-neutral-content w-96 mx-auto">
+        <div className="card bg-neutral text-neutral-content sm:w-80 md:w-auto 2xl:w-96 mx-auto">
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{number} - {name}</h2>
                 <p>{description}</p>
