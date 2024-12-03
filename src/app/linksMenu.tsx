@@ -4,7 +4,7 @@ export default function LinksMenu() {
     return (
         <>
             <li><Link href="/contact">Nous contacter</Link></li>
-            <li><Link href="/team">L'Equipe</Link></li>
+            <li><Link href="/team">L&apos;Equipe</Link></li>
             <li>
                 <details>
                 <summary>Nos actions</summary>

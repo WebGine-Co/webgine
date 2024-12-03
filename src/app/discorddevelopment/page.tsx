@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import Accroche from "./accroche";
 import DevService from "./devservice";
 import Functionnality from "./functionnality";

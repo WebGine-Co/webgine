@@ -10,7 +10,7 @@ export default function Technologies () {
             <ul className="list-disc list-inside py-10 pl-10">
             <li><strong>Discord.js :</strong> Une bibliothèque puissante pour le développement de bots Discord en JavaScript.</li>
             <li><strong>Python :</strong> Un langage de programmation polyvalent utilisé pour des tâches complexes et des intégrations API.</li>
-            <li><strong>Node.js :</strong> Un environnement d'exécution JavaScript côté serveur pour des applications évolutives et performantes.</li>
+            <li><strong>Node.js :</strong> Un environnement d&apos;exécution JavaScript côté serveur pour des applications évolutives et performantes.</li>
             </ul>
         </div>
     );

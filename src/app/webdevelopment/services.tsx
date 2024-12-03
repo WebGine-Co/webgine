@@ -4,15 +4,15 @@ export default function Services() {
 
   return (
     <div className="py-20">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center my-20 underline underline-offset-3 decoration-primary">Nos Services de Développement d'Applications Web</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center my-20 underline underline-offset-3 decoration-primary">Nos Services de Développement d&apos;Applications Web</h1>
         <p className="pb-10">
-          Nous offrons une gamme complète de services pour répondre à tous vos besoins en développement d'applications web :
+          Nous offrons une gamme complète de services pour répondre à tous vos besoins en développement d&apos;applications web :
         </p>
 
         <IdeaCard 
           image="surmesure" 
           name="Développement sur Mesure" 
-          description="Nous créons des applications web personnalisées qui répondent parfaitement à vos exigences spécifiques. Que vous ayez besoin d'une application de gestion, d'un portail client ou d'une plateforme de réservation, nous avons la solution pour vous." 
+          description="Nous créons des applications web personnalisées qui répondent parfaitement à vos exigences spécifiques. Que vous ayez besoin d&apos;une application de gestion, d&apos;un portail client ou d&apos;une plateforme de réservation, nous avons la solution pour vous." 
         />
 
         <IdeaCard 

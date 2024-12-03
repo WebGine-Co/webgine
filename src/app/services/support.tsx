@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Support() {
     return (
       <div className="py-20">

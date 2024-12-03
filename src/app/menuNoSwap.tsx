@@ -1,4 +1,3 @@
-import Link from "next/link";
 import LinksMenu from "./linksMenu";
 
 export default function Navbar() {
