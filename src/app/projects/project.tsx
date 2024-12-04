@@ -13,7 +13,7 @@ export default function Project({ url, file }: ProjectProps) {
                     <div className="input">{ url }</div>
                 </div>
                 <div className="bg-base-200 flex justify-center">
-                    <Image src={`/project_images/${file}.webp`} priority={true} width={1000} height={500} alt="hero" className="w-full h-auto"/>
+                    <Image src={`/project_images/${file}`} priority={true} width={1000} height={500} alt="hero" className="w-full h-auto"/>
                 </div>
             </div>
             <div className="divider divider-success"></div>
