@@ -10,9 +10,9 @@ interface EventProps {
 
 export default function Event({ place, number, url, year, file }: EventProps) {
     return (
-        <li>
+        <li className="max-lg:grid-cols-1">
             {place !== 'first' && <hr className="bg-primary"/>}
-            <div className={number % 2 === 1 ? 'timeline-start timeline-box' : 'timeline-start lg:timeline-end timeline-box'}><Project url={url} file={file} /></div>
+            <div className={number % 2 === 1 ? 'timeline-start timeline-box w-full' : 'timeline-start lg:timeline-end timeline-box w-full'}><Project url={url} file={file} /></div>
             <div className={number % 2 === 1 ? 'timeline-end timeline-box' : 'timeline-end lg:timeline-start timeline-box'}>{year}</div>
             <div className="timeline-middle">
               <svg
