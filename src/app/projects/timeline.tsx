@@ -1,5 +1,4 @@
 import Event from "./event";
-import Project from "./project";
 
 export default function Timeline() {
 
